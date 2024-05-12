@@ -1,4 +1,10 @@
 from os import system as sys
+from platform import system as platform
+
+SYSTEM = platform()
 
 def esvaziarLixeira():
-  sys('del /Q /S /F C:\\$Recycle.Bin')
+  path = 'C:\\$Recycle.Bin'
+  if SYSTEM == 'Windows':
+    return sys(f'del /Q /S /F {path}')
+  return sys(f'rm -RF {path}')
