@@ -1,4 +1,7 @@
 from os import system as sys
+from getUser import *
+
+USER = getlogin()
 
 def delArqsExplorer():
   layoutArqs = [
@@ -12,10 +15,10 @@ def delArqsExplorer():
     cont += 1
 
   option = int(input('Informe a opção que deseja utilizar: '))
-  user = str(input('Informe o user do seu computador: '))
+  
   routesArqs = [
-    f"C:\\Users\\{user}\\Downloads",
-    f"C:\\Users\\{user}\\Documents"
+    f"C:\\Users\\{USER}\\Downloads",
+    f"C:\\Users\\{USER}\\Documents"
   ]
   delArq = [
     f'del /Q /S /F {routesArqs[0]}',

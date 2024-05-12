@@ -4,6 +4,8 @@ from layoutConsole import layout
 from clearConsole import clearConsole
 from clearArqTemp import clearArqTemps
 from cleanDisk import cleanDisk
+from esvaziarLixeira import esvaziarLixeira
+from getUser import *
 
 
 def callFuntion():
@@ -16,7 +18,7 @@ def optionUser():
   user = str(input('Deseja utilizar qual opção: '))
 
   try:
-    if user != '' and user.isnumeric() and int(user) > 0 and int(user) < 5:
+    if user != '' and user.isnumeric() and int(user) > 0 and int(user) < 7:
       user = int(user)
 
       match user:
@@ -33,6 +35,15 @@ def optionUser():
           callFuntion()
 
         case 4:
+          esvaziarLixeira()
+          callFuntion()
+
+        case 5:
+          andressLocalHost()
+          user = input('Aperte qualquer tecla pra continuar: ')
+          callFuntion()
+
+        case 6:
           exit()
 
     else:

@@ -1,8 +1,7 @@
 from os import system as sys
-
+from getUser import *
 def clearArqTemps():
-  user = str(input('Informe o user do seu computador: '))
-  
+  user = getlogin()
   routes = [
     'C:\\Windows\\Temp',
     f'C:\\Users\\{user}\\AppData\\Local\\Temp',

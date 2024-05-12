@@ -1,9 +1,12 @@
 def layout(msg):
 
   options = [
+    # 'Fazer Limpeza Profunda (Todas opções)'
     'Limpar Arquivos Temporarios',
     'Limpar Disco',
     'Limpar Pastas',
+    'Esvaziar Lixeira',
+    'Ver IPv4',
     'Sair'
   ]
 
