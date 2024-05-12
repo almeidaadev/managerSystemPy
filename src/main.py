@@ -1,8 +1,7 @@
-from clearConsole import *;
-from clearArqTemp import *;
-from layoutConsole import *;
+from layoutConsole import layout
+from validarOptionUser import optionUser
+from clearConsole import clearConsole
 
 clearConsole()
-clearConsole()
-layout('Tools Computer')
-clearArqTemps()
+layout('test')
+optionUser()

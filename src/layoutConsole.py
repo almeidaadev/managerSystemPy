@@ -3,6 +3,7 @@ def layout(msg):
   options = [
     'Limpar Arquivos Temporarios',
     'Limpar Disco',
+    'Limpar Pastas'
     'Sair'
   ]
 
