@@ -28,11 +28,12 @@ def delArqsExplorer():
     f'del /Q /S /F {routesArqs[0]}',
     f'del /Q /S /F {routesArqs[1]}'
   ]
+  
   delArqLinux = [
     f'rm -RF {routesArqs[0]}',
     f'rm -RF {routesArqs[1]}'
   ]
-  
+
   if SYSTEM == 'Windows':
     match option:
       case 1:
