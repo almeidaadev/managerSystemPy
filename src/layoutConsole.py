@@ -1,6 +1,6 @@
-import tkinter
 import tkinter as tk
 from tkinter import messagebox
+import getUser  # Importe o módulo getUser corretamente
 
 def limpar_arquivos_temporarios():
     messagebox.showinfo("Limpar Arquivos Temporários", "Executando a limpeza de arquivos temporários...")
@@ -15,10 +15,11 @@ def esvaziar_lixeira():
     messagebox.showinfo("Esvaziar Lixeira", "Esvaziando a lixeira...")
 
 def ver_ipv4():
-    messagebox.showinfo("Ver IPv4", "Exibindo o endereço IPv4...")
+    ip_address = getUser.ver_ipv4()  # Corrija o nome do módulo aqui
+    messagebox.showinfo("Ver IPv4", f"Exibindo o endereço IPv4... {ip_address}")
 
 def sair():
-    window.destroy()  # WINDOW NAO TA SENDO DEFINIDO DEFINA ALMEIDA
+    window.destroy()
 
 def layout():
     window = tk.Tk()
