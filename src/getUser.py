@@ -13,5 +13,3 @@ def andressLocalHost():
 
 def userComputer():
   return getlogin()
-
-andressLocalHost()
