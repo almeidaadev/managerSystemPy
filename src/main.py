@@ -1,6 +1,6 @@
 from layoutConsole import layout
-from validarOptionUser import optionUser
 from clearConsole import clearConsole
+from validarOptionUser import optionUser
 
 clearConsole()
 layout('test')

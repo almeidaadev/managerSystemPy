@@ -1,5 +1,5 @@
 from time import sleep
-# from renameArqs import renameArqs
+from delArqsExplorer import delArqsExplorer
 from layoutConsole import layout
 from clearConsole import clearConsole
 from clearArqTemp import clearArqTemps
@@ -26,9 +26,9 @@ def optionUser():
           cleanDisk()
           callFuntion()
           
-        # case 3:
-        #   renameArqs()
-        #   callFuntion()
+        case 3:
+          delArqsExplorer()
+          callFuntion()
 
         case 4:
           exit()
