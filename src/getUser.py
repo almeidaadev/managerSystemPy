@@ -9,7 +9,7 @@ import socket
 from os import getlogin
 
 def andressLocalHost():
-  print(f"Esses São seus IPs: \n{"\n".join(socket.gethostbyname_ex(socket.gethostname())[-1])}")
+  print(f"Esses São seus IPs: {' '.join(socket.gethostbyname_ex(socket.gethostname())[-1])}")
 
 def userComputer():
   return getlogin()
