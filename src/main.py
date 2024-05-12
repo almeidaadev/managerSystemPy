@@ -3,5 +3,5 @@ from clearConsole import clearConsole
 from validarOptionUser import optionUser
 
 clearConsole()
-layout('test')
+layout('Manager System')
 optionUser()

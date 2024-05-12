@@ -5,18 +5,20 @@ from clearConsole import clearConsole
 from clearArqTemp import clearArqTemps
 from cleanDisk import cleanDisk
 
+
 def callFuntion():
   sleep(1)
   clearConsole()
-  layout('test')
+  layout('Manager System')
   optionUser()
 
 def optionUser():
   user = str(input('Deseja utilizar qual opção: '))
 
   try:
-    if user != '' and user.isnumeric() and int(user) > 0 and int(user) < 4:
+    if user != '' and user.isnumeric() and int(user) > 0 and int(user) < 5:
       user = int(user)
+
       match user:
         case 1:
           clearArqTemps()
@@ -32,8 +34,9 @@ def optionUser():
 
         case 4:
           exit()
+
     else:
-      print('Digite um numero')
+      print('Digite um numero valido')
       callFuntion()
       
   except ValueError:

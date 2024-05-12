@@ -1,6 +1,6 @@
 from os import system as sys;
-import platform
+from platform import system as platform
 
-def clearConsole(systemOperation = platform.system()):
+def clearConsole(systemOperation = platform()):
   if systemOperation == 'Windows': return sys('cls')
   return sys('clear')

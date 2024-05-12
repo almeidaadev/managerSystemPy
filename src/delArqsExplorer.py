@@ -1,4 +1,5 @@
 from os import system as sys
+
 def delArqsExplorer():
   layoutArqs = [
     'Downloads',
@@ -24,5 +25,6 @@ def delArqsExplorer():
   match option:
     case 1:
       sys(delArq[0])
+
     case 2:
       sys(delArq[1])
