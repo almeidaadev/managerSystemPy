@@ -18,7 +18,7 @@ def ver_ipv4():
     messagebox.showinfo("Ver IPv4", "Exibindo o endereço IPv4...")
 
 def sair():
-    window.destroy()  # WINDOW NAO TA SENDO DEFINIDO DEFINA
+    window.destroy()  # WINDOW NAO TA SENDO DEFINIDO DEFINA ALMEIDA
 
 def layout():
     window = tk.Tk()
