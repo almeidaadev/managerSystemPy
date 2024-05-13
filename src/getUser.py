@@ -1,10 +1,3 @@
-# from pathlib import Path
-
-# users = [
-#   x.name for x in Path(r'C:\Users').glob('*') if x.name not in ['Default', 'Default User', 'Public', 'All Users'] and x.is_dir()
-# ]
-# print(users)
-
 import socket
 from os import getlogin
 

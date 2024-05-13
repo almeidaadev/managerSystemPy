@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import getUser  # Importe o módulo getUser corretamente
+from esvaziarLixeira import esvaziarLixeira
 
 def limpar_arquivos_temporarios():
     messagebox.showinfo("Limpar Arquivos Temporários", "Executando a limpeza de arquivos temporários...")
@@ -12,6 +13,7 @@ def limpar_pastas():
     messagebox.showinfo("Limpar Pastas", "Executando a limpeza de pastas...")
 
 def esvaziar_lixeira():
+    esvaziarLixeira()
     messagebox.showinfo("Esvaziar Lixeira", "Esvaziando a lixeira...")
 
 def ver_ipv4():
@@ -19,7 +21,7 @@ def ver_ipv4():
     messagebox.showinfo("Ver IPv4", f"Exibindo o endereço IPv4... {ip_address}")
 
 def sair():
-    window.destroy()
+    exit()
 
 def layout():
     window = tk.Tk()
