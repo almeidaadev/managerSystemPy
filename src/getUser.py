@@ -8,10 +8,8 @@ def ver_ipv4():
     except socket.error as e:
         print(f"Erro ao obter endereço IPv4: {e}")
         return None
-
-def user_computer():
-    return getlogin()
-
+    
+"""
 ipv4 = ver_ipv4()
 if ipv4:
     print(f"Endereço IPv4: {ipv4}")
@@ -20,3 +18,4 @@ else:
 
 username = user_computer()
 print(f"Nome de usuário: {username}")
+"""

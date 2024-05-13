@@ -1,15 +1,21 @@
 import tkinter as tk
 from tkinter import messagebox
-import getUser  # Importe o módulo getUser corretamente
+import getUser
+from cleanDisk import cleanDisk
+from clearArqTemp import clearArqTemps
 from esvaziarLixeira import esvaziarLixeira
+from delArqsExplorer import delArqsExplorer
 
 def limpar_arquivos_temporarios():
+    clearArqTemps()
     messagebox.showinfo("Limpar Arquivos Temporários", "Executando a limpeza de arquivos temporários...")
 
 def limpar_disco():
+    cleanDisk()
     messagebox.showinfo("Limpar Disco", "Executando a limpeza do disco...")
 
 def limpar_pastas():
+    delArqsExplorer()
     messagebox.showinfo("Limpar Pastas", "Executando a limpeza de pastas...")
 
 def esvaziar_lixeira():

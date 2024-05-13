@@ -5,7 +5,7 @@ from clearConsole import clearConsole
 from clearArqTemp import clearArqTemps
 from cleanDisk import cleanDisk
 from esvaziarLixeira import esvaziarLixeira
-from getUser import *
+import getUser
 
 
 def callFuntion():
@@ -39,7 +39,7 @@ def optionUser():
           callFuntion()
 
         case 5:
-          andressLocalHost()
+          getUser.ver_ipv4()
           user = input('Aperte qualquer tecla pra continuar: ')
           callFuntion()
 

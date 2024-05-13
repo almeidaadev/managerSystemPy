@@ -30,8 +30,8 @@ def delArqsExplorer():
   ]
   
   delArqLinux = [
-    f'rm -RF {routesArqs[0]}',
-    f'rm -RF {routesArqs[1]}'
+    f'rm -R {routesArqs[0]}',
+    f'rm -R {routesArqs[1]}'
   ]
 
   if SYSTEM == 'Windows':
