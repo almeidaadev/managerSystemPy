@@ -8,7 +8,7 @@ def ver_ipv4():
     except socket.error as e:
         print(f"Erro ao obter endereço IPv4: {e}")
         return None
-    
+
 """
 ipv4 = ver_ipv4()
 if ipv4:

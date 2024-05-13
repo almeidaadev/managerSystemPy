@@ -1,17 +1,18 @@
 from time import sleep
 from delArqsExplorer import delArqsExplorer
-from layoutConsole import layout
+from layoutWindow import layoutWindow
 from clearConsole import clearConsole
 from clearArqTemp import clearArqTemps
 from cleanDisk import cleanDisk
 from esvaziarLixeira import esvaziarLixeira
-import getUser
-
-
+from getUser import ver_ipv4
+from layoutConsole import layoutConsole
+from layoutWindow import layout
 def callFuntion():
   sleep(1)
   clearConsole()
-  layout('Manager System')
+  layoutWindow('Manager System')
+  #layoutConsole('Manager System')
   optionUser()
 
 def optionUser():
@@ -39,7 +40,7 @@ def optionUser():
           callFuntion()
 
         case 5:
-          getUser.ver_ipv4()
+          ver_ipv4()
           user = input('Aperte qualquer tecla pra continuar: ')
           callFuntion()
 
