@@ -2,10 +2,28 @@ from os import system as sys
 from getUser import *
 from platform import system as platform
 
-
 USER = getlogin()
 SYSTEM = platform()
 
+routesArqs = [
+  f"C:\\Users\\{USER}\\Downloads",
+  f"C:\\Users\\{USER}\\Documents"
+]
+
+routesArqsLinux = [
+  f"~/Downloads/",
+  f"~/Documents"
+]
+
+delArq = [
+  f'del /Q /S /F {routesArqs[0]}',
+  f'del /Q /S /F {routesArqs[1]}'
+]
+
+delArqLinux = [
+  f'rm -r {routesArqsLinux[0]}',
+  f'rm -r {routesArqsLinux[1]}'
+]
 def delArqsExplorer():
   layoutArqs = [
     'Downloads',
@@ -17,23 +35,8 @@ def delArqsExplorer():
     print(f'{cont} - {layout}')
     cont += 1
 
-  option = int(input('Informe a opção que deseja utilizar: '))
+  option = int(input('Informe a opção que deseja utilizar: ')) 
   
-  routesArqs = [
-    f"C:\\Users\\{USER}\\Downloads",
-    f"C:\\Users\\{USER}\\Documents"
-  ]
-
-  delArq = [
-    f'del /Q /S /F {routesArqs[0]}',
-    f'del /Q /S /F {routesArqs[1]}'
-  ]
-  
-  delArqLinux = [
-    f'rm -R {routesArqs[0]}',
-    f'rm -R {routesArqs[1]}'
-  ]
-
   if SYSTEM == 'Windows':
     match option:
       case 1:

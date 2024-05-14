@@ -8,6 +8,7 @@ from esvaziarLixeira import esvaziarLixeira
 from getUser import ver_ipv4
 from layoutConsole import layoutConsole
 from layoutWindow import layout
+
 def callFuntion():
   sleep(1)
   clearConsole()
