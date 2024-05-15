@@ -22,10 +22,3 @@ def clearArqTemps():
     for delRoutes in ROUTES_WINDOWS:
       cmdDel = f'del /Q /S /F {delRoutes}'
       return sys(cmdDel)
-
-""" 
-  else:
-    for delRoutes in ROUTES:
-      cmdDel = f'rm -RF {delRoutes}'
-      return sys(cmdDel) 
-"""

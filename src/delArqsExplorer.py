@@ -12,7 +12,7 @@ routesArqs = [
 
 routesArqsLinux = [
   f"~/Downloads/",
-  f"~/Documents"
+  f"~/Documents/"
 ]
 
 delArq = [
